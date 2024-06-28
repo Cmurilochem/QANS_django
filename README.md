@@ -31,4 +31,10 @@ source .venv_qans/bin/activate
 (.venv_qans) $ python manage.py runserver
 ```
 
+Then, open the following link in your browser:
+
+```
+http://127.0.0.1:8000/qqe/
+```
+
 
