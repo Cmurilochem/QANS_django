@@ -2,6 +2,10 @@
 
 QANS django web app
 
+**Admin user**
+Username: Turbulence
+Password: JRLC1234
+
 
 # Local run
 To run and contribute to this app, follow the instructions below:
