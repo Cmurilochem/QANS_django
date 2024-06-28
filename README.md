@@ -2,8 +2,10 @@
 
 QANS django web app
 
-**Admin user**
+## **Admin user**
+
 Username: Turbulence
+
 Password: JRLC1234
 
 
