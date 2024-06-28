@@ -7,7 +7,7 @@ QANS django web app
 
 ## Clone repo
 
-```
+```console
 git clone https://github.com/Cmurilochem/QANS_django.git
 cd QANS_django/
 ```
