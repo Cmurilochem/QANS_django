@@ -32,7 +32,7 @@ source .venv_qans/bin/activate
 Then, install django inside your venv:
 
 ```console
-(.venv_qans) $ python -m pip install django
+(.venv_qans) $ python -m pip install django dj-database-url django-allauth
 ```
 
 ## Run the development server

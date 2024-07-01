@@ -1,0 +1,17 @@
+<!-- survey_app/templates/survey_app/survey_list.html -->
+
+{% extends 'base_generic.html' %}
+
+{% block title %}Survey List{% endblock %}
+
+{% block content %}
+  <h2>Survey List</h2>
+  <ul>
+    {% for survey in surveys %}
+      <li>
+        {{ survey.title }} 
+        <a href="{% url 'submit_response' survey.id %}">Submit Response</a>
+      </li>
+    {% endfor %}
+  </ul>
+{% endblock %}

@@ -1,0 +1,13 @@
+<!-- survey_app/templates/survey_app/survey_report.html -->
+
+{% extends 'base_generic.html' %}
+
+{% block content %}
+  <h2>{{ survey.title }} - Report</h2>
+  {% for response in responses %}
+    <h3>Response {{ forloop.counter }}</h3>
+    {% for answer in response.answers.all %}
+      <p>{{ answer.question.text }}: {{ answer.text }}</p>
+    {% endfor %}
+  {% endfor %}
+{% endblock %}

@@ -4,5 +4,10 @@
   <h2>Welcome to the QQE App</h2>
   <ul>
     <li><a href="{% url 'admin:index' %}">Create New Survey as Admin</a></li>
+    <li><a href="{% url 'account_login' %}">Login</a></li>
+    <li><a href="{% url 'account_signup' %}">Sign Up</a></li>
+    <li><a href="{% url 'create_survey' %}">Create Survey</a></li>
+    <li><a href="{% url 'survey_list' %}">Survey List</a></li>
+  </ul>
   </ul>
 {% endblock %}

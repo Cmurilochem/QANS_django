@@ -1,0 +1,16 @@
+<!-- survey_app/templates/survey_app/submit_response.html -->
+
+{% extends 'base_generic.html' %}
+
+{% block content %}
+  <h2>{{ survey.title }}</h2>
+  <form method="post">
+    {% csrf_token %}
+    {{ response_form.as_p }}
+    {% for question in survey.questions.all %}
+      <p>{{ question.text }}</p>
+      <textarea name="question_{{ question.id }}"></textarea>
+    {% endfor %}
+    <button type="submit">Submit</button>
+  </form>
+{% endblock %}
